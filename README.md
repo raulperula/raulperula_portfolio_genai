@@ -1,2 +1,3 @@
-# raulperula_portfolio_genai
+# Portfolio IA generativa
+
 Portfolio con proyectos de IA generativa.

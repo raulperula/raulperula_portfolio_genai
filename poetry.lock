@@ -177,6 +177,27 @@ tests-mypy = ["mypy (>=1.6)", "pytest-mypy-plugins"]
 tests-no-zope = ["attrs[tests-mypy]", "cloudpickle", "hypothesis", "pympler", "pytest (>=4.3.0)", "pytest-xdist[psutil]"]
 
 [[package]]
+name = "beautifulsoup4"
+version = "4.12.3"
+description = "Screen-scraping library"
+optional = false
+python-versions = ">=3.6.0"
+files = [
+    {file = "beautifulsoup4-4.12.3-py3-none-any.whl", hash = "sha256:b80878c9f40111313e55da8ba20bdba06d8fa3969fc68304167741bbf9e082ed"},
+    {file = "beautifulsoup4-4.12.3.tar.gz", hash = "sha256:74e3d1928edc070d21748185c46e3fb33490f22f52a3addee9aee0f4f7781051"},
+]
+
+[package.dependencies]
+soupsieve = ">1.2"
+
+[package.extras]
+cchardet = ["cchardet"]
+chardet = ["chardet"]
+charset-normalizer = ["charset-normalizer"]
+html5lib = ["html5lib"]
+lxml = ["lxml"]
+
+[[package]]
 name = "blinker"
 version = "1.8.2"
 description = "Fast, simple object-to-object and broadcast signaling"
@@ -1746,6 +1767,17 @@ files = [
 ]
 
 [[package]]
+name = "soupsieve"
+version = "2.5"
+description = "A modern CSS selector implementation for Beautiful Soup."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "soupsieve-2.5-py3-none-any.whl", hash = "sha256:eaa337ff55a1579b6549dc679565eac1e3d000563bcb1c8ab0d0fefbc0c2cdc7"},
+    {file = "soupsieve-2.5.tar.gz", hash = "sha256:5663d5a7b3bfaeee0bc4372e7fc48f9cff4940b3eec54a6451cc5299f1097690"},
+]
+
+[[package]]
 name = "sqlalchemy"
 version = "2.0.31"
 description = "Database Abstraction Library"
@@ -1833,6 +1865,21 @@ pymysql = ["pymysql"]
 sqlcipher = ["sqlcipher3_binary"]
 
 [[package]]
+name = "st-social-media-links"
+version = "0.1.1"
+description = "A Python package designed to assist in displaying social media links within Streamlit apps."
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "st-social-media-links-0.1.1.tar.gz", hash = "sha256:07f84594b95be5481e1c3d76e4297b62d90eb7b34e3c9b1dd578677c0e2dcfbf"},
+    {file = "st_social_media_links-0.1.1-py3-none-any.whl", hash = "sha256:c38e979f246162cdb475ae2e891125cebea1a10385d4416c13cbb8945d89254a"},
+]
+
+[package.dependencies]
+beautifulsoup4 = ">=4.12.2"
+streamlit = ">=1.32.0"
+
+[[package]]
 name = "streamlit"
 version = "1.36.0"
 description = "A faster way to build and share data apps"
@@ -1866,6 +1913,34 @@ watchdog = {version = ">=2.1.5,<5", markers = "platform_system != \"Darwin\""}
 
 [package.extras]
 snowflake = ["snowflake-connector-python (>=2.8.0)", "snowflake-snowpark-python (>=0.9.0)"]
+
+[[package]]
+name = "streamlit-card"
+version = "1.0.2"
+description = "A streamlit component, to make UI cards"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "streamlit_card-1.0.2-py3-none-any.whl", hash = "sha256:f5d01ce57d6481eb3ba44e504146f56a7b82907d6700f0c19266ed6381a9c58f"},
+    {file = "streamlit_card-1.0.2.tar.gz", hash = "sha256:8001cd5edd8a6e2db36ee81f37dc645f08f78c21a2ba968403176c68b4f33cb1"},
+]
+
+[package.dependencies]
+streamlit = ">=0.63"
+
+[[package]]
+name = "streamlit-pills"
+version = "0.3.0"
+description = "💊 A Streamlit component to show clickable pills/badges"
+optional = false
+python-versions = ">=3.8,<4.0"
+files = [
+    {file = "streamlit-pills-0.3.0.tar.gz", hash = "sha256:47668ad4fd8c137b203ee1aec9d9d44ed8b2ff7ded9f586984f204be2eac772f"},
+    {file = "streamlit_pills-0.3.0-py3-none-any.whl", hash = "sha256:b66fdf7b1820c09b751a76ef1ae01ab93221d0c2c2d1cd489b711b9afaae0513"},
+]
+
+[package.dependencies]
+streamlit = ">=1.12.0,<2.0.0"
 
 [[package]]
 name = "tenacity"
@@ -2128,4 +2203,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "214268c6e336ba8b568967f376b6cda83afd1b2f2e1b349210329d09a7a27107"
+content-hash = "118102e936f7a6a8acc277c605aeac2de8c9f459554ad1611cd6078338fc9faa"

@@ -11,6 +11,9 @@ python = "^3.10"
 langchain = "^0.2.5"
 langchain-community = "^0.2.5"
 streamlit = "^1.36.0"
+streamlit-pills = "^0.3.0"
+streamlit-card = "^1.0.2"
+st-social-media-links = "^0.1.1"
 
 
 [build-system]
